@@ -1,0 +1,48 @@
+*{margin: o;
+padding: 0;
+box-sizing: border-box;}
+
+
+body {font-family: Arial, Helvetica, sans-serif; background-color: tomato;}
+body {/* more on this crazy alphanumerical value in a minute! */ color: #39a6b2; font-family: Arial, Helvetica, sans-serif;}
+/* apply styles to <header> */
+ header { padding: 20px; background-color: #39a6b2;}
+
+/* explicitly list the side it should be  applied to */
+header {padding-top: 10px;
+padding-right: 15px;
+padding-bottom: 20px;
+padding-left: 25px;}
+
+header  h1 {font-weight: bold;
+font-size: 36px;
+color: #fce138;
+margin: 0;
+display: inline;}
+
+header a {color: #fce138;}
+
+header a {text-decoration: none;
+color: #fce138;}
+
+header nav {float: right; margin: 7px 0;}
+
+header nav ul li {display: inline;}
+
+header nav ul li a {margin: 0 30px;
+                    font-weight: lighter;
+                font-size: 22px;}
+footer {background: #fce138;
+width: 100%;
+padding: 40px 35px;}
+
+footer h2 {display: inline;
+color: #024e76;
+font-size: 30px;
+margin: 0;}
+
+footer div {float: right;
+line-height: 1.5;
+text-align: right;}
+
+footer a {color: #024e76;}

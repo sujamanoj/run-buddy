@@ -11,13 +11,29 @@ body {/* more on this crazy alphanumerical value in a minute! */ color: #39a6b2;
 /* apply styles to <header> */
  header { padding: 20px; background-color: #39a6b2;}
 
+  /* Applies 20px to every side (top, right, bottom, left) */
+  header {
+    padding: 20px;
+  }
+ 
+  /* Applies 20px to the top and bottom, then 35px to the left and right */
+  header {
+    padding: 20px 35px;
+  }
+ 
+  /* Applies 10px to the top, 15px to the right, 20px to the bottom, 25px to the left (in that specific clockwise order) */
+  header {
+    padding: 10px 15px 20px 25px;
+  }
+ 
+
 /* explicitly list the side it should be  applied to */
 header {padding-top: 10px;
 padding-right: 10px;
 padding-bottom: 15px;
 padding-left: 20px;}
 
-header  h1 {font-weight: bold;
+header h1 {font-weight: bold;
 font-size: 36px;
 color: #fce138;
 margin: 0;
@@ -26,16 +42,23 @@ display: inline;
 
 header a {color: #9c890a;}
 
-header a {text-decoration: none;
+header a {
+  text-decoration: none;
 color: #fce138;}
 
-header nav {float: right; margin: 7px 0;}
+header nav {
+  float: right; 
+  margin: 7px 0;}
 
-header nav ul li {display: inline;}
+header nav ul li { 
+  display: inline;}
 
-header nav ul li a {margin: 0 30px;
-                    font-weight: lighter;
-                font-size: 22px;}
+header nav ul li a {
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 22px;}
+
+
 footer {background: #fce138;
 width: 100%;
 padding: 40px 35px;}
@@ -85,7 +108,6 @@ section {
   .intro {
       text-align: center;
   }
-
   .intro h2 {
       font-size: 55px;
       color: #024e76;
@@ -94,7 +116,6 @@ section {
       border-bottom: 3px solid;
       border-color: #fce138;
   }
-
   .intro h2 {
     /* add this alongside your other declarations */
     display: inline-block;
@@ -120,6 +141,9 @@ section {
     padding: 0 100px 20px 100px;
     border-bottom: 3px solid;
     border-color: #39a6b2;
+  }
+  .steps span {
+    font-size: 38px;
   }
 .section-title {
   font-size: 55px;
@@ -168,6 +192,15 @@ section {
   .steps span {
     font-size: 38px;
   }
+.trainer img {float: left;
+}
+.trainer p {float: right;
+}
+.trainer-2 img {float: right;
+}
+.trainer-2 p {float: left;
+}
+
   .trainers {
     text-align: center;
   }
@@ -191,7 +224,7 @@ section {
   .text-left {
     text-align: left;
   }
-  
+
   .text-right {
     text-align: right;
   }
@@ -199,33 +232,19 @@ section {
     font-size: 32px;
     margin-bottom: 8px;
   }
-  
+
   .trainer-bio h4 {
     font-weight: lighter;
     font-size: 26px;
     margin-bottom: 25px;
   }
-  
+
   .trainer-bio p {
     font-size: 17px;
     line-height: 1.3;
   }
-    
-  .trainer-2 img {
-    width: 35%;
-      float: right;
-  }
-.trainer-2 p {
-    padding: 35px;
-    float: left;
-}
-.trainer-2 {
-    width: 900px;
-    margin: 0 auto 30px auto;
-    background: #024e76;
-    color: #fce138;
-    overflow: auto;
-  }
+
+
   .section-title {
     font-size: 55px;
     display: inline-block;
@@ -246,4 +265,30 @@ section {
     width: 400px;
     height: 400px;
   }
-  
+/* homepage hero */
+.hero {
+  margin: 20px;
+  background-color: white;
+  font-size: 20px;
+  color: blue;
+}
+
+/* secondary page hero */
+.hero-secondary {
+  margin: 20px;
+  background-color: black;
+  font-size: 20px;
+  color: red;
+}  
+.hero {
+  margin: 20px;
+  font-size: 20px;
+  background-color: white;
+  color: blue;
+}
+
+/* these two colors will override the ones above in .hero */
+.hero-secondary {
+  background-color: black;
+  color: red;
+}

@@ -31,13 +31,17 @@ body {/* more on this crazy alphanumerical value in a minute! */ color: #39a6b2;
 header {padding-top: 10px;
 padding-right: 10px;
 padding-bottom: 15px;
-padding-left: 20px;}
+padding-left: 20px;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
 
-header h1 {font-weight: bold;
+header h1 {
+  font-weight: bold;
 font-size: 36px;
 color: #fce138;
 margin: 0;
-display: inline;
 }
 
 header a {color: #9c890a;}
@@ -47,7 +51,6 @@ header a {
 color: #fce138;}
 
 header nav {
-  float: right; 
   margin: 7px 0;}
 
 header nav ul li { 

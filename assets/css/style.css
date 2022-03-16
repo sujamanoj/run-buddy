@@ -71,15 +71,18 @@ header nav ul li a {
 footer {
   background: #fce138;
 width: 100%;
-padding: 40px 35px;
+padding: 40px 0 35px 0;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
 }
 
-footer h2 {display: inline;
+footer h2 {
 color: #024e76;
 font-size: 30px;
 margin: 0;}
 
-footer div {float: right;
+footer div {
 line-height: 1.5;
 text-align: right;}
 
